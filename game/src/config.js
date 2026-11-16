@@ -29,19 +29,19 @@ export const WEAPONS = {
   p9: {
     id: 'p9', name: 'P9 Sidearm', price: 0, slot: 1,
     damage: 26, headMul: 3, mag: 12, reserve: 36, auto: false,
-    interval: 0.16, spread: 0.008, moveSpread: 0.028, recoil: 0.012,
+    interval: 0.16, spread: 0.004, moveSpread: 0.028, recoil: 0.012,
     reload: 1.1, range: 60, pellets: 1, kick: 0.5, zoom: 1,
   },
   vk9: {
     id: 'vk9', name: 'VK-9 Ripper', price: 1500, slot: 2,
     damage: 21, headMul: 3, mag: 30, reserve: 120, auto: true,
-    interval: 0.085, spread: 0.016, moveSpread: 0.034, recoil: 0.009,
+    interval: 0.085, spread: 0.009, moveSpread: 0.034, recoil: 0.009,
     reload: 1.9, range: 55, pellets: 1, kick: 0.42, zoom: 1,
   },
   ar77: {
     id: 'ar77', name: 'AR-77 Longshot', price: 2700, slot: 3,
     damage: 33, headMul: 3, mag: 25, reserve: 75, auto: true,
-    interval: 0.11, spread: 0.006, moveSpread: 0.026, recoil: 0.014,
+    interval: 0.11, spread: 0.003, moveSpread: 0.026, recoil: 0.014,
     reload: 2.4, range: 90, pellets: 1, kick: 0.62, zoom: 1,
   },
   sg12: {

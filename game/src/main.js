@@ -208,4 +208,5 @@ function boot() {
 }
 
 window.addEventListener('error', (e) => { window.__gameError = String(e.message || e.error); });
+window.__emberline = S; // debug handle: the live state store, for play-testing
 boot();

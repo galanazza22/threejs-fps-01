@@ -73,7 +73,6 @@ export function playerFire(S) {
   p.cooldown = w.interval;
   p.bloom = Math.min(0.05, p.bloom + w.recoil * 0.55);
   p.recoilPitch = Math.min(0.09, p.recoilPitch + w.recoil);
-  p.pitch += w.recoil * 0.55; // kick climbs the view; it recovers in player.js
   sfx.shot(p.weapon);
   S.shot = true;
   S.shotX = p.x;
@@ -128,6 +127,9 @@ export function playerFire(S) {
     }
   }
   if (anyHit) { S.hitmark = 0.25; S.hitmarkKill = anyKill; sfx.hit(); if (anyKill) sfx.kill(); }
+  // Recoil climbs the view AFTER the shot leaves the barrel, so the shot
+  // itself goes where the player aimed; the next shot must be re-aimed.
+  p.pitch += w.recoil * 0.55;
   return true;
 }
 
